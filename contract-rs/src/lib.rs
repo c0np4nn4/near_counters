@@ -8,10 +8,8 @@ pub struct Counter {
     val: i8,
 }
 
-// Implement the contract structure
 #[near]
 impl Counter {
-    // Public read-only method: Returns the counter value.
     pub fn get_num(&self) -> i8 {
         return self.val;
     }
